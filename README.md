@@ -2,8 +2,10 @@
 
 ## Overview
 
-This repo consists of a sqlite database of congressional rollcalls scraped from
-the THOMAS database: http://thomas.loc.gov/home/rollcallvotes.html
+This repo consists of files used to generate a sqlite database of congressional
+roll call votes scraped from the THOMAS database: 
+
+http://thomas.loc.gov/home/rollcallvotes.html
 
 THOMAS goes back to 1990, but the HTML changed in 2003 so the database only
 goes back that far for now. Also, this is only congressional rollcalls: I 
@@ -36,12 +38,12 @@ s.run_once() # Will prompt user to input year to start scraping at.
              # Works backwards from that year.
 ```
 
-My intention is to update this tool in the futures so it will monitor new votes
-periodically much like the NYT roll call live updated data graphic: 
+My intention is to update this tool in the future so it will be kept up to date
+in near real time much like the NYT roll call live updated data graphic: 
 http://politics.nytimes.com/congress/votes/113/house/1/502
 
-At present, it only dumps to the database after scraping a full year's worth of
-votes.
+At present, the script only dumps to the database after scraping a full year's 
+worth of votes.
 
 ## Requirements
 
